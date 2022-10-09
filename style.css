@@ -1,0 +1,114 @@
+body{
+    font-family: 'Playball', cursive;
+}
+
+.welcome{
+    background : url("images/bg5.jpg");
+    background-repeat: no-repeat;
+    /* background-position: ; */
+}
+
+.welcome img{
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    animation: rot 15s linear infinite;
+    object-fit: cover;
+    background-size: cover;
+}
+
+@keyframes rot {
+    100%{
+        transform: rotate(360deg);
+        
+    }
+}
+
+.bg{
+    width:100%;
+    /* position: fixed; */
+}
+
+.bg{
+    background: url("images/bg2.jpg");
+    width:100%;
+    z-index: -1;
+    background-attachment: fixed;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.bg2{
+    width:100%;
+    /* position: fixed; */
+}
+
+.bg2{
+    background: url("images/bg4.jpg");
+    width:100%;
+    z-index: -1;
+    background-attachment: fixed;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.card:hover{
+    animation: zoom-in-zoom-out  ease-in forwards;
+    border :3px solid black;
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+    transform: scale(1, 1);
+    }
+    100% {
+    transform: scale(1.1, 1.1);
+    }
+}
+
+.rev{
+    width: 100%;
+    max-height: 50vh;
+    overflow-x:auto;
+    display: flex;
+}
+
+.rev::-webkit-scrollbar{
+    width: 0px;
+    display: none;
+}
+
+.rev-item{
+    /* margin-top: 0px; */
+    border-radius: 8px;
+    min-width: 420px;
+}
+
+/* .rev-item:hover{
+    
+} */
+
+.name{
+    position: relative;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.ab-img{
+    width: 50%;
+    background: url("images/chef2.jpg");
+    /* background-attachment: fixed; */
+    object-fit: cover;
+    background-size: cover;
+}
+
+.form{
+    width:50%;
+    align-items: center;
+    border: 5px solid white;
+}
+.frm{
+    margin: auto;
+    align-items: center;
+    display: flex;
+}
